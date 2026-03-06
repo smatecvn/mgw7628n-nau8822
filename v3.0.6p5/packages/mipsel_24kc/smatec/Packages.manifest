@@ -6,34 +6,14 @@ SourceName: mgw7688-os
 Section: utils
 SourceDateEpoch: 1725432219
 Architecture: mipsel_24kc
-Installed-Size: 27764
+Installed-Size: 27801
 Filename: mgw7688-os_1_mipsel_24kc.ipk
-Size: 28843
-SHA256sum: 2aadd065a7c9f15d04ef97a0b6d51b8d7787ac523da64846d88835f549e1dc0b
+Size: 28875
+SHA256sum: 9fc7b894c48b02fce1467bbc745af21efa3916587eb675c3870ff92888077657
 Description:  MGW7688 Board Support Package
 
-Package: python3-alsaaudio
-Version: 0.8.4-1
-Depends: libc, python3, alsa-lib
-Source: /home/user/archive-master/smatec/python-alsaaudio
-SourceName: python3-alsaaudio
-License: Python Software Foundation License (PSF)
-LicenseFiles: LICENSE.rst
-Section: lang
-SourceDateEpoch: 1724769069
-CPE-ID: cpe:/a:larsimmisch:pyalsaaudio
-Maintainer: HaiBac Ngo <ngohaibac@gmail.com>
-Architecture: mipsel_24kc
-Installed-Size: 15942
-Filename: python3-alsaaudio_0.8.4-1_mipsel_24kc.ipk
-Size: 16716
-SHA256sum: f3579f7c1b0e7e2d7848f1e361ea5109ad9d31d5404f4a6a8d1b2deb590d0679
-Description:  ALSA wrappers for Python
- .
- (Variant for Python3)
-
 Package: python3-mgw
-Version: mira_3.0.6p3-1
+Version: mira_3.0.6p5-1
 Depends: libc, python3
 Source: /home/user/archive-master/smatec-v3.1/python-mgw
 SourceName: python3-mgw
@@ -45,9 +25,9 @@ CPE-ID: cpe:/a:smt:mgw
 Maintainer: Nguyen Hong Son <sonnh911@gmail.com>
 Architecture: mipsel_24kc
 Installed-Size: 168525
-Filename: python3-mgw_mira_3.0.6p3-1_mipsel_24kc.ipk
+Filename: python3-mgw_mira_3.0.6p5-1_mipsel_24kc.ipk
 Size: 169483
-SHA256sum: 90851004d646d9ff40ff5cb03f71020a5701b5dc39c99d94f4b920702908d344
+SHA256sum: a145b8cc722d48b6f2642d4978bb3dc70a8aa18bab1328da74195baa7dd91a7d
 Description:  Smatec M-Gateway
  .
  (Variant for Python3)
@@ -71,18 +51,4 @@ SHA256sum: d5963472fb113c3db8e8036d228b4bd415d7ae03363a22a2f79f2e879942c605
 Description:  
  .
  (Variant for Python3)
-
-Package: sms-modem
-Version: 1
-Depends: libc, curl, strace, coreutils, coreutils-stty, coreutils-timeout, avahi-dbus-daemon, kmod-fs-vfat, dosfstools, rpcd, rpcd-mod-iwinfo, rpcd-mod-rpcsys, kmod-mt76, picocom, kmod-i2c-core, kmod-i2c-mt7628, cgi-io, uboot-envtools, kmod-sdhci-mt7620, kmod-usb-storage, usbutils, block-mount, kmod-video-core, kmod-video-uvc, kmod-sound-core, kmod-sound-mt7620, madplay, alsa-utils, comgt, usb-modeswitch, kmod-mii, kmod-usb-wdm, kmod-usb-net-qmi-wwan, kmod-usb-net-rndis, uqmi, kmod-usb-serial, kmod-usb-serial-option, kmod-usb-serial-wwan, htop, tcpdump-mini, netcat, jq
-Source: /home/user/archive-master/smatec-sms/sms-modem
-SourceName: sms-modem
-Section: utils
-SourceDateEpoch: 1650270493
-Architecture: mipsel_24kc
-Installed-Size: 2237234
-Filename: sms-modem_1_mipsel_24kc.ipk
-Size: 2232347
-SHA256sum: 194a2137aeb7a1ea5ba92daecbbfadf634fa85c44a4764914f006a270280ae67
-Description:  AI7688H Based SMS Modem Board Support Package
 

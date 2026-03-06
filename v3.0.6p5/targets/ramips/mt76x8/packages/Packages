@@ -339,18 +339,6 @@ Size: 5837
 SHA256sum: a697dc420b90183a43a49fccccc87341ac8e82bb13f79cd2fae046c26832e0ea
 Description:  SHA224 SHA256 digest CryptoAPI module
 
-Package: kmod-dma-buf
-Version: 5.4.145-1
-Depends: kernel (=5.4.145-1-09ffc9c282b421ff54dee08147940f61)
-License: GPL-2.0
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 14331
-Filename: kmod-dma-buf_5.4.145-1_mipsel_24kc.ipk
-Size: 15079
-SHA256sum: a0a6551bd26e9cfd38c8c93d3730753aab6b9e537889c586b98b4736213810b4
-Description:  DMA shared buffer support
-
 Package: kmod-dma-ralink
 Version: 5.4.145-1
 Depends: kernel (=5.4.145-1-108b52d0abddbe9387c39b705b860ca0)
@@ -528,19 +516,6 @@ Filename: kmod-leds-gpio_5.4.145-1_mipsel_24kc.ipk
 Size: 3563
 SHA256sum: 09d3c7bfc80009c121aa74403b3db03624f153bb3b64490957f5e0dedf7570f6
 Description:  Kernel module for LEDs on GPIO lines
-
-Package: kmod-ledtrig-audio
-Version: 5.4.145-1
-Depends: kernel (=5.4.145-1-86a21d3604ee48dc8fcf3d4de5d1a53e)
-License: GPL-2.0
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 1091
-Filename: kmod-ledtrig-audio_5.4.145-1_mipsel_24kc.ipk
-Size: 1898
-SHA256sum: 7c57df111706adecd85d16112e867c6d85b3f100c5de7afe7159f7a6dd727834
-Description:  Kernel module that allows LEDs to be controlled by audio drivers
- to follow audio mute and mic-mute changes.
 
 Package: kmod-lib-crc-ccitt
 Version: 5.4.145-1
@@ -938,18 +913,6 @@ Size: 55848
 SHA256sum: 3769af0a8977f12534a7dbdd557949fafbf31efda2f30675bde0e3b8f4862226
 Description:  Kernel modules for sound support
 
-Package: kmod-sound-hda-core
-Version: 5.4.145-1
-Depends: kernel (=5.4.145-1-7e1f8704cab3c514f12e863994ac9af6), kmod-ledtrig-audio, kmod-sound-core, kmod-regmap-core
-License: GPL-2.0
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 105
-Filename: kmod-sound-hda-core_5.4.145-1_mipsel_24kc.ipk
-Size: 879
-SHA256sum: 9b849cf11d751181640117fc1f365f37e74ab11675a82cffcd42236faea092c1
-Description:  Kernel modules for HD Audio sound support
-
 Package: kmod-sound-mt7620
 Version: 5.4.145-1
 Depends: kernel (=5.4.145-1-108b52d0abddbe9387c39b705b860ca0), kmod-sound-soc-core, kmod-regmap-i2c, kmod-dma-ralink, kmod-sound-core
@@ -1153,42 +1116,6 @@ Filename: kmod-usb2_5.4.145-1_mipsel_24kc.ipk
 Size: 9061
 SHA256sum: 7ca2d0728f12f6fcbc5e1d2e73d0b64a848a4c306a8931b620fb0b9e2e9ca62b
 Description:  Kernel support for USB2 (EHCI) controllers
-
-Package: kmod-video-core
-Version: 5.4.145-1
-Depends: kernel (=5.4.145-1-09ffc9c282b421ff54dee08147940f61), kmod-i2c-core
-License: GPL-2.0
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 76680
-Filename: kmod-video-core_5.4.145-1_mipsel_24kc.ipk
-Size: 74188
-SHA256sum: 1c2e92f76f61b61857e2b65cc58b8a2a4d4c89d628f83491bf1e3b0341627e15
-Description:  Kernel modules for Video4Linux support
-
-Package: kmod-video-uvc
-Version: 5.4.145-1
-Depends: kernel (=5.4.145-1-09ffc9c282b421ff54dee08147940f61), kmod-usb-core, kmod-video-videobuf2, kmod-input-core, kmod-video-core
-License: GPL-2.0
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 45966
-Filename: kmod-video-uvc_5.4.145-1_mipsel_24kc.ipk
-Size: 46683
-SHA256sum: ccef05bfa3bb8467a37d2e0962d8660de05aae24440bf4e62f5d0161b14fc50c
-Description:  Kernel modules for supporting USB Video Class (UVC) devices
-
-Package: kmod-video-videobuf2
-Version: 5.4.145-1
-Depends: kernel (=5.4.145-1-09ffc9c282b421ff54dee08147940f61), kmod-dma-buf, kmod-video-core
-License: GPL-2.0
-Section: kernel
-Architecture: mipsel_24kc
-Installed-Size: 27656
-Filename: kmod-video-videobuf2_5.4.145-1_mipsel_24kc.ipk
-Size: 28415
-SHA256sum: fd18408bff61dc24ea8a67e11bd7f1fdbb5884bf9e35a3aa1ef75a8f134b7332
-Description:  Kernel modules that implements three basic types of media buffers.
 
 Package: libatomic1
 Version: 11.2.0-3
