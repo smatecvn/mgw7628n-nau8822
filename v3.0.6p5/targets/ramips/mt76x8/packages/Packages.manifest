@@ -1103,10 +1103,10 @@ License: GPL-2.0
 Section: kernel
 SourceDateEpoch: 1631545910
 Architecture: mipsel_24kc
-Installed-Size: 10014
+Installed-Size: 10018
 Filename: kmod-sdhci-mt7620_5.4.145-1_mipsel_24kc.ipk
-Size: 10793
-SHA256sum: 67d118d1b89fea3e6b255b6a84f5d8c1f6a3f5246ece1b8492fb3a106115b1dc
+Size: 10794
+SHA256sum: 6cc9687c9181290ebc31b527e5e50c92e3047fa3e353921705290511cc3fd7c6
 Description:  MT7620 SDCI
 
 Package: kmod-slhc

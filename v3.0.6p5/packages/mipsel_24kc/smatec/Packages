@@ -5,8 +5,8 @@ Section: utils
 Architecture: mipsel_24kc
 Installed-Size: 27801
 Filename: mgw7688-os_1_mipsel_24kc.ipk
-Size: 28875
-SHA256sum: 9fc7b894c48b02fce1467bbc745af21efa3916587eb675c3870ff92888077657
+Size: 28876
+SHA256sum: 0c7834f00e82e24f932db95618a17d66cff7c423acd59ac422b53646f912d11d
 Description:  MGW7688 Board Support Package
 
 Package: python3-mgw
@@ -19,7 +19,7 @@ Architecture: mipsel_24kc
 Installed-Size: 168525
 Filename: python3-mgw_mira_3.0.6p5-1_mipsel_24kc.ipk
 Size: 169483
-SHA256sum: a145b8cc722d48b6f2642d4978bb3dc70a8aa18bab1328da74195baa7dd91a7d
+SHA256sum: cb701aa3b592c6d813584ed611e2bdffe5b5af39e17426faa39b9db5e1e7ea39
 Description:  Smatec M-Gateway
  .
  (Variant for Python3)
@@ -34,7 +34,7 @@ Architecture: mipsel_24kc
 Installed-Size: 19364
 Filename: python3-pyaudio_0.2.11-1_mipsel_24kc.ipk
 Size: 20214
-SHA256sum: d5963472fb113c3db8e8036d228b4bd415d7ae03363a22a2f79f2e879942c605
+SHA256sum: b351a235cf3dba693f6d284ad7a452b6fa3a5ceb9331bae97393c5b78e6e8dd2
 Description:  
  .
  (Variant for Python3)
