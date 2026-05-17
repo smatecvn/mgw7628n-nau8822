@@ -239,6 +239,21 @@ Size: 3058
 SHA256sum: 52e8e1bea1a26fd11a74dbeb6bb2cee101749fc7ae4b3bab776fc5fc8e015e37
 Description:  Support for PPP/PPPoE/PPPoA/PPtP
 
+Package: luci-proto-qmi
+Version: git-21.265.39600-b5464a3
+Depends: libc, uqmi
+Source: /home/user/archive-master/luci/protocols/luci-proto-qmi
+SourceName: luci-proto-qmi
+Section: luci
+SourceDateEpoch: 1632308400
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 1544
+Filename: luci-proto-qmi_git-21.265.39600-b5464a3_all.ipk
+Size: 2405
+SHA256sum: f3768fc142151d6e5e45d1f9e9b6318c42473824527281422e1e71e951473a92
+Description:  Support for QMI
+
 Package: luci-theme-bootstrap
 Version: git-21.283.63931-588e24f
 Depends: libc

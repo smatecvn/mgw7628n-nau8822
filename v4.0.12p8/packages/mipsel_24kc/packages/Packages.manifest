@@ -69,6 +69,23 @@ SHA256sum: bd21cf97b9d011dd1eee9cc02f9ae19f8854081105b9cfed14227fe1b139cc74
 Description:  aria2 is a lightweight multi-protocol & multi-source command-line download
  utility
 
+Package: ariang
+Version: 1.2.2-1
+Depends: libc, aria2, uhttpd
+Source: /home/user/archive-master/packages/net/ariang
+SourceName: ariang
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1632375478
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
+Architecture: all
+Installed-Size: 1012448
+Filename: ariang_1.2.2-1_all.ipk
+Size: 1013112
+SHA256sum: 895d9e74a9ab01e6275fbdbbaa3c2dc9cbe1613794981ca2f55d8592143517b3
+Description:  AriaNg is a web frontend making aria2 easier to use. AriaNg is written in pure html & javascript, thus it does not need any compilers or runtime environment.
+
 Package: avahi-dbus-daemon
 Version: 0.8-7
 Depends: libc, libavahi-dbus-support, libexpat, librt, libdaemon
@@ -1263,10 +1280,10 @@ SourceDateEpoch: 1632765667
 CPE-ID: cpe:/a:python:python
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Architecture: mipsel_24kc
-Installed-Size: 144149
+Installed-Size: 144151
 Filename: python3-asyncio_3.9.7-2_mipsel_24kc.ipk
-Size: 145177
-SHA256sum: 78c7a7f53e18b835ebc7d6a02952291ee770ccec3a1079963c07d044adcf6e02
+Size: 145181
+SHA256sum: 37bb3f5b9fe7081aac2d7e23e399cfe367e897406e42e5f74ff113393091584f
 Description:  Python 3.9 asyncio module
 
 Package: python3-base
@@ -1358,6 +1375,23 @@ Size: 113228
 SHA256sum: fd97d08fd7b54f8f6a01b60b9842a549661aeeb8bc3efcf62ff384ef65c180d2
 Description:  Universal encoding detector for Python 2 and 3
 
+Package: python3-click
+Version: 8.0.1-1
+Depends: libc, python3-light
+Source: /home/user/archive-master/packages/lang/python/click
+SourceName: python3-click
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: lang
+SourceDateEpoch: 1632375478
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Architecture: mipsel_24kc
+Installed-Size: 118119
+Filename: python3-click_8.0.1-1_mipsel_24kc.ipk
+Size: 119006
+SHA256sum: 01ff077ccfc1d4ba64de56d91dda5f6cdde46802a4c297a03b2aaa42e2777999
+Description:  Composable command line interface toolkit
+
 Package: python3-codecs
 Version: 3.9.7-2
 Depends: libc, python3-light
@@ -1442,10 +1476,10 @@ SourceDateEpoch: 1632765667
 CPE-ID: cpe:/a:python:python
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Architecture: mipsel_24kc
-Installed-Size: 175811
+Installed-Size: 175812
 Filename: python3-distutils_3.9.7-2_mipsel_24kc.ipk
-Size: 176841
-SHA256sum: 38f66ba27a149533cc195a81a57b8507bd0509ca7e28f9426b2161fb1ed7209d
+Size: 176838
+SHA256sum: 236b06be3358e74f9243ab556b58492f7d724bf034511fdaf20494787ae292b6
 Description:  Python 3.9 distutils module
 
 Package: python3-email
@@ -1462,9 +1496,46 @@ Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@
 Architecture: mipsel_24kc
 Installed-Size: 113057
 Filename: python3-email_3.9.7-2_mipsel_24kc.ipk
-Size: 114098
-SHA256sum: f8ced9aa4c3cea9e4cb908605bacd7d99ea83ecf25b19f29ad933735901092bb
+Size: 114087
+SHA256sum: 2aacb52e110e81abb57c977c54d9c135a7865678f1576028a5b48c87ec3bef6f
 Description:  Python 3.9 email module
+
+Package: python3-flask-httpauth
+Version: 4.2.0-1
+Depends: libc, python3-light, python3-flask
+Source: /home/user/archive-master/packages/lang/python/python-flask-httpauth
+SourceName: python3-flask-httpauth
+License: MIT
+LicenseFiles: LICENSE
+Section: lang
+SourceDateEpoch: 1632375478
+Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 6357
+Filename: python3-flask-httpauth_4.2.0-1_mipsel_24kc.ipk
+Size: 7238
+SHA256sum: 15a388d756fd18195207a06a340d646849b18285f78921d57fff1a1e2f5c4238
+Description:  Flask-HTTPAuth is a Flask extension that simplifies the
+ use of HTTP authentication with Flask routes
+
+Package: python3-flask
+Version: 2.0.1-1
+Depends: libc, python3-asyncio, python3-click, python3-codecs, python3-decimal, python3-itsdangerous, python3-jinja2, python3, python3-logging, python3-markupsafe, python3-multiprocessing, python3-setuptools, python3-werkzeug
+Source: /home/user/archive-master/packages/lang/python/Flask
+SourceName: python3-flask
+License: BSD-3-Clause
+LicenseFiles: LICENSE.rst
+Section: lang
+SourceDateEpoch: 1632375478
+CPE-ID: cpe:/a:palletsprojects:flask
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Architecture: mipsel_24kc
+Installed-Size: 104714
+Filename: python3-flask_2.0.1-1_mipsel_24kc.ipk
+Size: 105774
+SHA256sum: 83d8f0963f399e7efb2ef146f29288aa6c5ded3f70caee64f2539231f9eda97c
+Description:  Flask is a microframework for Python based on Werkzeug, Jinja 2 and good
+ intentions. And before you ask: It.s BSD licensed!
 
 Package: python3-idna
 Version: 3.2-1
@@ -1486,6 +1557,43 @@ Description:  A library to support the Internationalised Domain Names in Applica
  is often referred to as "IDNA2008" and can produce different results
  from the earlier standard from 2003.
 
+Package: python3-itsdangerous
+Version: 2.0.1-1
+Depends: libc, python3-light
+Source: /home/user/archive-master/packages/lang/python/itsdangerous
+SourceName: python3-itsdangerous
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: lang
+SourceDateEpoch: 1632375478
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Architecture: mipsel_24kc
+Installed-Size: 18476
+Filename: python3-itsdangerous_2.0.1-1_mipsel_24kc.ipk
+Size: 19353
+SHA256sum: 85a7e96426dda005260f65e84fa3f8cdb5b0fad1971fa2190f7ef6669d6ac9e3
+Description:  Various helpers to pass trusted data to untrusted environments and back.
+
+Package: python3-jinja2
+Version: 3.0.1-1
+Depends: libc, python3-light, python3-markupsafe
+Source: /home/user/archive-master/packages/lang/python/Jinja2
+SourceName: python3-jinja2
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: lang
+SourceDateEpoch: 1632375478
+CPE-ID: cpe:/a:pocoo:jinja2
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Architecture: mipsel_24kc
+Installed-Size: 174826
+Filename: python3-jinja2_3.0.1-1_mipsel_24kc.ipk
+Size: 175878
+SHA256sum: e8bd793152d07a9c2aaefd091ab4f31c39c969cee0363948261c4eb390f2bd76
+Description:  Jinja2 is a full featured template engine for Python. It has full
+ unicode support, an optional integrated sandboxed execution
+ environment, widely used and BSD licensed.
+
 Package: python3-light
 Version: 3.9.7-2
 Depends: libc, python3-base, libffi, libbz2-1.0, libuuid1
@@ -1498,10 +1606,10 @@ SourceDateEpoch: 1632765667
 CPE-ID: cpe:/a:python:python
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Architecture: mipsel_24kc
-Installed-Size: 1852848
+Installed-Size: 1852813
 Filename: python3-light_3.9.7-2_mipsel_24kc.ipk
-Size: 1853528
-SHA256sum: 9ec2566bce77272200b4b426121dc712e4795aee3c45517808a8e3e6629051dc
+Size: 1853442
+SHA256sum: 995690abbec516356390d15748477390b8e9229d9fe7356190baf539dcfe38eb
 Description:  This package is essentially the python3-base package plus
  a few of the rarely used (and big) libraries stripped out
  into separate packages.
@@ -1541,6 +1649,23 @@ Filename: python3-lzma_3.9.7-2_mipsel_24kc.ipk
 Size: 16434
 SHA256sum: 75a08ced5453db5b122d09be055f5024c41166b4679b2740b59d78f3aa826b76
 Description:  Python 3.9 lzma module
+
+Package: python3-markupsafe
+Version: 2.0.1-1
+Depends: libc, python3-light
+Source: /home/user/archive-master/packages/lang/python/MarkupSafe
+SourceName: python3-markupsafe
+License: BSD-3-Clause
+LicenseFiles: LICENSE.rst
+Section: lang
+SourceDateEpoch: 1632375478
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Architecture: mipsel_24kc
+Installed-Size: 12513
+Filename: python3-markupsafe_2.0.1-1_mipsel_24kc.ipk
+Size: 13370
+SHA256sum: a3aa71f39ebb74f13b4fa2cbecd9698c83dfcfd70d3a7056c0e8d1064d5e63f6
+Description:  MarkupSafe implements a text object that escapes characters so it is safe to use in HTML and XML.
 
 Package: python3-multiprocessing
 Version: 3.9.7-2
@@ -1625,10 +1750,10 @@ SourceDateEpoch: 1632765667
 CPE-ID: cpe:/a:python:python
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Architecture: mipsel_24kc
-Installed-Size: 146500
+Installed-Size: 146505
 Filename: python3-pkg-resources_57.4.0-1_mipsel_24kc.ipk
-Size: 147478
-SHA256sum: 2e7c25f5ee08f28ec597763274a8e4a43b0ac0162083353f67b7b13527928878
+Size: 147481
+SHA256sum: 5c45b4b1fdac7e9608104aa048545ac2776f4521ee30742c650dafa141a934cd
 Description:  Python 3.9 pkg_resources module (part of setuptools)
 
 Package: python3-pydoc
@@ -1643,10 +1768,10 @@ SourceDateEpoch: 1632765667
 CPE-ID: cpe:/a:python:python
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Architecture: mipsel_24kc
-Installed-Size: 191772
+Installed-Size: 191775
 Filename: python3-pydoc_3.9.7-2_mipsel_24kc.ipk
-Size: 192779
-SHA256sum: ecfbc9943fa6a2e93bb948ff179b5567e98a356ea55458fc8da041ab959c4265
+Size: 192783
+SHA256sum: 2f51450b7e757a8e4db4c27df5b20f1b08a7a888843f57fb5618293dc7c31e2b
 Description:  Python 3.9 pydoc module
 
 Package: python3-pyserial
@@ -1716,10 +1841,10 @@ SourceDateEpoch: 1632765667
 CPE-ID: cpe:/a:python:python
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Architecture: mipsel_24kc
-Installed-Size: 506669
+Installed-Size: 506670
 Filename: python3-setuptools_57.4.0-1_mipsel_24kc.ipk
-Size: 507659
-SHA256sum: e7892eae99a211a80ccf77a5f04e6d1cc769e6bc4bb9b14884273d7c638b4e4f
+Size: 507657
+SHA256sum: 2759feac71bd9bfb3486049737bc2baf604feabe51ea35c0846f72d7394bc110
 Description:  Python 3.9 setuptools module
 
 Package: python3-smbus
@@ -1769,10 +1894,10 @@ SourceDateEpoch: 1632765667
 CPE-ID: cpe:/a:python:python
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 Architecture: mipsel_24kc
-Installed-Size: 76387
+Installed-Size: 76385
 Filename: python3-unittest_3.9.7-2_mipsel_24kc.ipk
 Size: 77387
-SHA256sum: 51e5b316a1b9db8644bb2272613609fc72442445bc3e19bcc415ec8be6fd1a84
+SHA256sum: b2d2a8e9283aca3e2d4845194d53f5c8a6eecb4e67ebf24af47775cb9a91ddc4
 Description:  Python 3.9 unittest module
 
 Package: python3-urllib3
@@ -1790,7 +1915,7 @@ Architecture: mipsel_24kc
 Installed-Size: 127916
 Filename: python3-urllib3_1.25.11-1_mipsel_24kc.ipk
 Size: 128859
-SHA256sum: 0ad357fc47a468644ccbd0460252c91460a2231d1d80988ac0c414aac5ac7f84
+SHA256sum: 54f20ce3a11f5a91d3d7121a9c15b21573cdbae0dfe7aa10d34e6ce988388ab5
 Description:  HTTP library with thread-safe connection pooling, file post, and more.
 
 Package: python3-urllib
@@ -1810,6 +1935,23 @@ Filename: python3-urllib_3.9.7-2_mipsel_24kc.ipk
 Size: 51967
 SHA256sum: 3400bfb861228658fc96352a83eb9ac886deb26fa5cffcd08b9d9387c1323820
 Description:  Python 3.9 URL library module
+
+Package: python3-werkzeug
+Version: 2.0.1-1
+Depends: libc, python3-light, python3-email
+Source: /home/user/archive-master/packages/lang/python/Werkzeug
+SourceName: python3-werkzeug
+License: BSD-3-Clause
+LicenseFiles: LICENSE.rst
+Section: lang
+SourceDateEpoch: 1632375478
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Architecture: mipsel_24kc
+Installed-Size: 342839
+Filename: python3-werkzeug_2.0.1-1_mipsel_24kc.ipk
+Size: 338973
+SHA256sum: c2fcd95376b908218afa68b4bb3f320ec74a594947fd8698183a8ae338af6aa5
+Description:  The comprehensive WSGI web application library.
 
 Package: python3-xml
 Version: 3.9.7-2

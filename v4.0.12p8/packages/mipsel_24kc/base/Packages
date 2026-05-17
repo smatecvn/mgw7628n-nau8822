@@ -41,16 +41,16 @@ Description:  This package contains an utility to establish conversation with ot
  (via a modem).
 
 Package: dnsmasq
-Version: 2.86-2
+Version: 2.86-3
 Depends: libc, libubus20210630
 License: GPL-2.0
 Section: net
 CPE-ID: cpe:/a:thekelleys:dnsmasq
 Architecture: mipsel_24kc
-Installed-Size: 126723
-Filename: dnsmasq_2.86-2_mipsel_24kc.ipk
-Size: 127334
-SHA256sum: 515e9ee97f6a41badd0a6e2256dd7f57b96d264669d5da727f5e9f9765fe81f4
+Installed-Size: 126726
+Filename: dnsmasq_2.86-3_mipsel_24kc.ipk
+Size: 127345
+SHA256sum: 12f9484d58cb4280b7501a6b42089a4ea9796288c0e6f8c9661046c750f0dff1
 Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
 
 Package: e2fsprogs

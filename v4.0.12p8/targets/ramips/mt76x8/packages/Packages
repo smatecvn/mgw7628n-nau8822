@@ -1,13 +1,13 @@
 Package: base-files
-Version: 1452-r17583-b8007e5197
+Version: 1453-r17583+4-b8007e5197
 Depends: libc, netifd, jsonfilter, usign, openwrt-keyring, fstools, fwtool
 License: GPL-2.0
 Section: base
 Architecture: mipsel_24kc
-Installed-Size: 45850
-Filename: base-files_1452-r17583-b8007e5197_mipsel_24kc.ipk
-Size: 46819
-SHA256sum: 97dcaef354dd26a238b090a5e41941eb9c558b22ed49843c0b4ead9f552b90c7
+Installed-Size: 45851
+Filename: base-files_1453-r17583+4-b8007e5197_mipsel_24kc.ipk
+Size: 46823
+SHA256sum: 645d4dfc03ad99fcd1f98df9b9b95e23ac07eaf0de4c5e9de22c37b2d7263b27
 Description:  This package contains a base filesystem and system scripts for OpenWrt.
 
 Package: block-mount
@@ -339,6 +339,18 @@ Size: 5837
 SHA256sum: a697dc420b90183a43a49fccccc87341ac8e82bb13f79cd2fae046c26832e0ea
 Description:  SHA224 SHA256 digest CryptoAPI module
 
+Package: kmod-dma-buf
+Version: 5.4.145-1
+Depends: kernel (=5.4.145-1-2da46662e1d7647712faf4c6e668dede)
+License: GPL-2.0
+Section: kernel
+Architecture: mipsel_24kc
+Installed-Size: 14489
+Filename: kmod-dma-buf_5.4.145-1_mipsel_24kc.ipk
+Size: 15253
+SHA256sum: 5cd744ab930c939a33990577506970c95bffe585e3d6fe9e2540b319a6a7c46c
+Description:  DMA shared buffer support
+
 Package: kmod-dma-ralink
 Version: 5.4.145-1
 Depends: kernel (=5.4.145-1-108b52d0abddbe9387c39b705b860ca0)
@@ -399,10 +411,10 @@ Depends: kernel (=5.4.145-1-108b52d0abddbe9387c39b705b860ca0)
 License: GPL-2.0
 Section: kernel
 Architecture: mipsel_24kc
-Installed-Size: 4568
+Installed-Size: 4584
 Filename: kmod-i2c-core_5.4.145-1_mipsel_24kc.ipk
-Size: 5303
-SHA256sum: 8160621b5ae57f45f4d5e57dd4b2eeb17372b7f9af528338ae1439839ced2a45
+Size: 5313
+SHA256sum: 8b64b1159def1f41feef104ddd2e73cbdd5881be4d6554e625b0a21e12bd2fdb
 Description:  Kernel modules for I2C support
 
 Package: kmod-i2c-mt7628
@@ -411,10 +423,10 @@ Depends: kernel (=5.4.145-1-108b52d0abddbe9387c39b705b860ca0), kmod-i2c-core
 License: GPL-2.0
 Section: kernel
 Architecture: mipsel_24kc
-Installed-Size: 2408
+Installed-Size: 2406
 Filename: kmod-i2c-mt7628_5.4.145-1_mipsel_24kc.ipk
-Size: 3158
-SHA256sum: dda94404f1be7705ece103dc2b2acaa393edae7f77dbab776e6a987f6b4f9979
+Size: 3160
+SHA256sum: f7b53885028d391d6186f3855e9222f9831936e6e1fcec9bd4c359ac88d1e357
 Description:  Kernel modules for enable mt7621 i2c controller.
 
 Package: kmod-input-core
@@ -516,6 +528,19 @@ Filename: kmod-leds-gpio_5.4.145-1_mipsel_24kc.ipk
 Size: 3563
 SHA256sum: 09d3c7bfc80009c121aa74403b3db03624f153bb3b64490957f5e0dedf7570f6
 Description:  Kernel module for LEDs on GPIO lines
+
+Package: kmod-ledtrig-audio
+Version: 5.4.145-1
+Depends: kernel (=5.4.145-1-2da46662e1d7647712faf4c6e668dede)
+License: GPL-2.0
+Section: kernel
+Architecture: mipsel_24kc
+Installed-Size: 1091
+Filename: kmod-ledtrig-audio_5.4.145-1_mipsel_24kc.ipk
+Size: 1900
+SHA256sum: f05461282559da6468b448c32b1ebdee58f65f05cffa63993628693f04e3c8d2
+Description:  Kernel module that allows LEDs to be controlled by audio drivers
+ to follow audio mute and mic-mute changes.
 
 Package: kmod-lib-crc-ccitt
 Version: 5.4.145-1
@@ -886,7 +911,7 @@ Architecture: mipsel_24kc
 Installed-Size: 10018
 Filename: kmod-sdhci-mt7620_5.4.145-1_mipsel_24kc.ipk
 Size: 10794
-SHA256sum: 6cc9687c9181290ebc31b527e5e50c92e3047fa3e353921705290511cc3fd7c6
+SHA256sum: 495dda4654184181c499518a96d8e59f90c5fa79e465fd99766b346f3691bd9c
 Description:  MT7620 SDCI
 
 Package: kmod-slhc
@@ -919,10 +944,10 @@ Depends: kernel (=5.4.145-1-108b52d0abddbe9387c39b705b860ca0), kmod-sound-soc-co
 License: GPL-2.0
 Section: kernel
 Architecture: mipsel_24kc
-Installed-Size: 21426
+Installed-Size: 21651
 Filename: kmod-sound-mt7620_5.4.145-1_mipsel_24kc.ipk
-Size: 22082
-SHA256sum: a247ed8e67d92938ac6b94afc81f3744c7f9bb193b55cc06591b19401ef35af1
+Size: 22347
+SHA256sum: b3da5f82c199a0c06643349e3a2f2aa99658320bb5370c0a1e7ba8a362ab2db5
 Description:  Alsa modules for ralink i2s controller.
 
 Package: kmod-sound-mt762x-wm8960
@@ -1051,10 +1076,10 @@ Depends: kernel (=5.4.145-1-108b52d0abddbe9387c39b705b860ca0), kmod-usb-serial, 
 License: GPL-2.0
 Section: kernel
 Architecture: mipsel_24kc
-Installed-Size: 5840
+Installed-Size: 5831
 Filename: kmod-usb-serial-option_5.4.145-1_mipsel_24kc.ipk
-Size: 5727
-SHA256sum: f694d319fa7f3534e99f1a16b201672ca6214f90e4425e12c957bf8c6683229f
+Size: 5715
+SHA256sum: c3d2b630e95828ff92b11df012f69846ec42187fae68255fe226b10a4af64628
 Description:  Kernel support for Option HSDPA modems
 
 Package: kmod-usb-serial-wwan
@@ -1116,6 +1141,42 @@ Filename: kmod-usb2_5.4.145-1_mipsel_24kc.ipk
 Size: 9061
 SHA256sum: 7ca2d0728f12f6fcbc5e1d2e73d0b64a848a4c306a8931b620fb0b9e2e9ca62b
 Description:  Kernel support for USB2 (EHCI) controllers
+
+Package: kmod-video-core
+Version: 5.4.145-1
+Depends: kernel (=5.4.145-1-2da46662e1d7647712faf4c6e668dede), kmod-i2c-core
+License: GPL-2.0
+Section: kernel
+Architecture: mipsel_24kc
+Installed-Size: 76890
+Filename: kmod-video-core_5.4.145-1_mipsel_24kc.ipk
+Size: 74353
+SHA256sum: 50ff7c54a6895f26352c2befb1e5321d95256f408e67fb7b06b7adeb342c6bdd
+Description:  Kernel modules for Video4Linux support
+
+Package: kmod-video-uvc
+Version: 5.4.145-1
+Depends: kernel (=5.4.145-1-2da46662e1d7647712faf4c6e668dede), kmod-usb-core, kmod-video-videobuf2, kmod-input-core, kmod-video-core
+License: GPL-2.0
+Section: kernel
+Architecture: mipsel_24kc
+Installed-Size: 45966
+Filename: kmod-video-uvc_5.4.145-1_mipsel_24kc.ipk
+Size: 46681
+SHA256sum: 8682eb6b7e557b45815b14912908408e7c9a4344c298a739a8d8f74d51ed2ef5
+Description:  Kernel modules for supporting USB Video Class (UVC) devices
+
+Package: kmod-video-videobuf2
+Version: 5.4.145-1
+Depends: kernel (=5.4.145-1-2da46662e1d7647712faf4c6e668dede), kmod-dma-buf, kmod-video-core
+License: GPL-2.0
+Section: kernel
+Architecture: mipsel_24kc
+Installed-Size: 28104
+Filename: kmod-video-videobuf2_5.4.145-1_mipsel_24kc.ipk
+Size: 28878
+SHA256sum: d8430d4a36a91a05aaa6011f0123c567bda92c0239e066767dfbea3679732a6b
+Description:  Kernel modules that implements three basic types of media buffers.
 
 Package: libatomic1
 Version: 11.2.0-3

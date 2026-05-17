@@ -6,11 +6,31 @@ SourceName: mgw7688-os
 Section: utils
 SourceDateEpoch: 1778494039
 Architecture: mipsel_24kc
-Installed-Size: 28139
+Installed-Size: 28287
 Filename: mgw7688-os_1_mipsel_24kc.ipk
-Size: 29238
-SHA256sum: 4b59bfb7dacd9a121f241f0b456b0540762b444e13246306bdadb301945ab4d1
+Size: 29398
+SHA256sum: b813cbf83bbdc92d2136240f52d42b3f38edf6851fa8b6e2fb33581f76f3c7c0
 Description:  MGW7688 Board Support Package
+
+Package: python3-alsaaudio
+Version: 0.8.4-1
+Depends: libc, python3, alsa-lib
+Source: /home/user/archive-master/smatec/python-alsaaudio
+SourceName: python3-alsaaudio
+License: Python Software Foundation License (PSF)
+LicenseFiles: LICENSE.rst
+Section: lang
+SourceDateEpoch: 1724769069
+CPE-ID: cpe:/a:larsimmisch:pyalsaaudio
+Maintainer: HaiBac Ngo <ngohaibac@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 15942
+Filename: python3-alsaaudio_0.8.4-1_mipsel_24kc.ipk
+Size: 16716
+SHA256sum: f3579f7c1b0e7e2d7848f1e361ea5109ad9d31d5404f4a6a8d1b2deb590d0679
+Description:  ALSA wrappers for Python
+ .
+ (Variant for Python3)
 
 Package: python3-mgw
 Version: smartpa_4.0.12p8-1
@@ -24,10 +44,10 @@ SourceDateEpoch: 1641374271
 CPE-ID: cpe:/a:smt:mgw
 Maintainer: Nguyen Hong Son <sonnh911@gmail.com>
 Architecture: mipsel_24kc
-Installed-Size: 146551
+Installed-Size: 140940
 Filename: python3-mgw_smartpa_4.0.12p8-1_mipsel_24kc.ipk
-Size: 147493
-SHA256sum: 4b72bf69229a32e46746ed077eaf946f096ed70896f6ed9e288005e8c3a5feb2
+Size: 141957
+SHA256sum: 6d7c703d094329337679225c05761eb49e193301a307affaa5bcbe8f95ba836b
 Description:  Smatec M-Gateway
  .
  (Variant for Python3)
@@ -35,19 +55,19 @@ Description:  Smatec M-Gateway
 Package: python3-pyaudio
 Version: 0.2.11-1
 Depends: libc, python3, portaudio, python3-setuptools
-Source: /home/user/archive-master/smatec-smartpa-v3.3/python-pyaudio
+Source: /home/user/archive-master/packages/lang/python/ls
 SourceName: python3-pyaudio
 License: MIT License
 LicenseFiles: LICENSE.rst
 Section: lang
-SourceDateEpoch: 1724769069
+SourceDateEpoch: 1650270493
 CPE-ID: cpe:/a:hubert:pyaudio
 Maintainer: HaiBac Ngo <ngohaibac@gmail.com>
 Architecture: mipsel_24kc
-Installed-Size: 19364
+Installed-Size: 19367
 Filename: python3-pyaudio_0.2.11-1_mipsel_24kc.ipk
-Size: 20220
-SHA256sum: 6a4c0a298bf063f424b690c8d15a02df3c455f14cb5871ece5072643c1ad65c7
+Size: 20223
+SHA256sum: 2277d44868defde470247c4a0b75fe682981c0a448842ada26af23e9d698e6bb
 Description:  
  .
  (Variant for Python3)
