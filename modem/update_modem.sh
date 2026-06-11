@@ -11,8 +11,8 @@ usage() {
     echo "  CLM920"
     echo
     echo "Examples:"
-    echo "  $0 -m A7600 -v A50C4B14A7600M7"
-    echo "  $0 -m CLM920 -v CLM920_AC3_V1"
+    echo "  $0 -m A7600 -v A81C4B04A7600M7"
+    echo "  $0 -m CLM920 -v CLM920_JC3_V4.7"
     echo
     echo "Description:"
     echo "  This script upgrades the modem firmware to the specified version."
