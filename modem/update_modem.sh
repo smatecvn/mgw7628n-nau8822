@@ -9,10 +9,12 @@ usage() {
     echo "MODEM:"
     echo "  A7600"
     echo "  CLM920"
+    echo "  EC200A"
     echo
     echo "Examples:"
     echo "  $0 -m A7600 -v A81C4B04A7600M7"
     echo "  $0 -m CLM920 -v CLM920_JC3_V4.7"
+    echo "  $0 -m EC200A -v EC200ACNLAR01A12M16_fbf"
     echo
     echo "Description:"
     echo "  This script upgrades the modem firmware to the specified version."
@@ -74,6 +76,18 @@ case "$MODEM" in
         }
         ;;
 
+    EC200A)
+        BASE_URL="http://repo.smatec.com.vn/modem/ec200a"
+        DOWNLOADER="fbfdownloader_ec200a"
+        EXPECTED_VID="2c7c"
+        EXPECTED_PID="6005"
+        LOGFILE="/tmp/ec200a_upgrade.log"
+
+        echo "$VERSION" | grep -qi "EC200A" || {
+            echo "ERROR: Firmware version does not match modem type EC200A"
+            exit 1
+        }
+        ;;
     *)
         echo "ERROR: Unsupported modem type: $MODEM"
         exit 1

@@ -13,6 +13,7 @@
 |---------|------------|
 | A7600 | 1e0e:9011 |
 | CLM920 | 1286:4e3c |
+| EC200A | 2c7c:6005 |
 
 The upgrade script automatically verifies the modem type before starting the upgrade to prevent firmware mismatch.
 
@@ -52,7 +53,7 @@ Parameters:
 
 | Parameter | Description |
 |------------|------------|
-| `-m` | Modem type (`A7600` or `CLM920`) |
+| `-m` | Modem type (`A7600` or `CLM920` or `EC200A`) |
 | `-v` | Firmware version |
 
 Examples:
@@ -67,6 +68,12 @@ Upgrade CLM920:
 
 ```bash
 ./update_modem.sh -m CLM920 -v CLM920_JC3_V4.7
+```
+
+Upgrade EC200A:
+
+```bash
+./update_modem.sh -m EC200A -v EC200ACNLAR01A12M16_fbf
 ```
 
 ---
@@ -94,6 +101,7 @@ Before upgrading, the script verifies the modem type:
 |---------|------------|
 | A7600 | 1e0e:9011 |
 | CLM920 | 1286:4e3c |
+| EC200A | 2c7c:6005 |
 
 If the detected modem does not match the selected modem type, the upgrade will be aborted.
 
@@ -157,6 +165,12 @@ CLM920:
 
 ```bash
 cat /tmp/clm920_upgrade.log
+```
+
+EC200A:
+
+```bash
+cat /tmp/ec200a_upgrade.log
 ```
 
 ---
