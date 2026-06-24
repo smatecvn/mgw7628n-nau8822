@@ -3,10 +3,10 @@ Version: 1
 Depends: libc, curl, strace, coreutils, coreutils-stty, coreutils-timeout, lscpu, avahi-dbus-daemon, kmod-fs-vfat, kmod-fs-ext4, dosfstools, rpcd, rpcd-mod-iwinfo, rpcd-mod-rpcsys, kmod-mt76, picocom, kmod-i2c-core, kmod-i2c-mt7628, cgi-io, uboot-envtools, kmod-sdhci-mt7620, kmod-usb-storage, usbutils, block-mount, kmod-sound-core, kmod-sound-mt7620, madplay, alsa-utils, kmod-sound-mt762x-wm8960, comgt, usb-modeswitch, kmod-mii, kmod-usb-wdm, kmod-usb-net-qmi-wwan, kmod-usb-net-rndis, uqmi, kmod-usb-serial, kmod-usb-serial-option, kmod-usb-serial-wwan, python3, libmraa-python3, python3-pyaudio, python3-paho-mqtt, ffmpeg, ffprobe, mpd, mpc, python3-requests, python3-mgw, htop, tcpdump-mini, netcat, python3-pyserial, jq, aria2, fdisk, luci, e2fsprogs, lsblk, speedtest-netperf, kmod-rtc-pcf8563, i2c-tools, python3-smbus, ncat, tailscale
 Section: utils
 Architecture: mipsel_24kc
-Installed-Size: 28137
+Installed-Size: 28135
 Filename: mgw7688-os_1_mipsel_24kc.ipk
-Size: 29231
-SHA256sum: b0454773eac448235ddedc1e53e3f1b814952db14291f3dae2418940dcadb072
+Size: 29237
+SHA256sum: c4e0d08972fb45d57890700d7cae9ba0a8e2354eb9441c71d4f3e648e540b3b6
 Description:  MGW7688 Board Support Package
 
 Package: python3-alsaaudio

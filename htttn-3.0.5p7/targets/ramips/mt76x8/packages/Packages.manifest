@@ -1134,10 +1134,10 @@ License: GPL-2.0
 Section: kernel
 SourceDateEpoch: 1631545910
 Architecture: mipsel_24kc
-Installed-Size: 10019
+Installed-Size: 10018
 Filename: kmod-sdhci-mt7620_5.4.145-1_mipsel_24kc.ipk
-Size: 10801
-SHA256sum: 11cd43f1ae4bc93ce1c27cab4af743376557d5fcf241de3d5da613a619ed9864
+Size: 10794
+SHA256sum: 495dda4654184181c499518a96d8e59f90c5fa79e465fd99766b346f3691bd9c
 Description:  MT7620 SDCI
 
 Package: kmod-slhc
@@ -1346,10 +1346,10 @@ License: GPL-2.0
 Section: kernel
 SourceDateEpoch: 1631545910
 Architecture: mipsel_24kc
-Installed-Size: 5831
+Installed-Size: 5840
 Filename: kmod-usb-serial-option_5.4.145-1_mipsel_24kc.ipk
-Size: 5715
-SHA256sum: c3d2b630e95828ff92b11df012f69846ec42187fae68255fe226b10a4af64628
+Size: 5727
+SHA256sum: f694d319fa7f3534e99f1a16b201672ca6214f90e4425e12c957bf8c6683229f
 Description:  Kernel support for Option HSDPA modems
 
 Package: kmod-usb-serial-wwan
