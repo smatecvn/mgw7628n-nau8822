@@ -1,0 +1,74 @@
+Package: mgw7688-os
+Version: 1
+Depends: libc, curl, strace, coreutils, coreutils-stty, coreutils-timeout, lscpu, avahi-dbus-daemon, kmod-fs-vfat, kmod-fs-ext4, dosfstools, rpcd, rpcd-mod-iwinfo, rpcd-mod-rpcsys, kmod-mt76, picocom, kmod-i2c-core, kmod-i2c-mt7628, cgi-io, uboot-envtools, kmod-sdhci-mt7620, kmod-usb-storage, usbutils, block-mount, kmod-sound-core, kmod-sound-mt7620, madplay, alsa-utils, kmod-sound-mt762x-wm8960, comgt, usb-modeswitch, kmod-mii, kmod-usb-wdm, kmod-usb-net-qmi-wwan, kmod-usb-net-rndis, uqmi, kmod-usb-serial, kmod-usb-serial-option, kmod-usb-serial-wwan, python3, libmraa-python3, python3-pyaudio, python3-paho-mqtt, ffmpeg, ffprobe, mpd, mpc, python3-requests, python3-mgw, htop, tcpdump-mini, netcat, python3-pyserial, jq, aria2, fdisk, luci, e2fsprogs, lsblk, speedtest-netperf, kmod-rtc-pcf8563, i2c-tools, python3-smbus, ncat, tailscale
+Source: /home/user/archive-master/smatec-smartpa-v3.3/mgw7688-os
+SourceName: mgw7688-os
+Section: utils
+SourceDateEpoch: 1778494039
+Architecture: mipsel_24kc
+Installed-Size: 28287
+Filename: mgw7688-os_1_mipsel_24kc.ipk
+Size: 29398
+SHA256sum: b813cbf83bbdc92d2136240f52d42b3f38edf6851fa8b6e2fb33581f76f3c7c0
+Description:  MGW7688 Board Support Package
+
+Package: python3-alsaaudio
+Version: 0.8.4-1
+Depends: libc, python3, alsa-lib
+Source: /home/user/archive-master/smatec/python-alsaaudio
+SourceName: python3-alsaaudio
+License: Python Software Foundation License (PSF)
+LicenseFiles: LICENSE.rst
+Section: lang
+SourceDateEpoch: 1724769069
+CPE-ID: cpe:/a:larsimmisch:pyalsaaudio
+Maintainer: HaiBac Ngo <ngohaibac@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 15942
+Filename: python3-alsaaudio_0.8.4-1_mipsel_24kc.ipk
+Size: 16716
+SHA256sum: f3579f7c1b0e7e2d7848f1e361ea5109ad9d31d5404f4a6a8d1b2deb590d0679
+Description:  ALSA wrappers for Python
+ .
+ (Variant for Python3)
+
+Package: python3-mgw
+Version: smartpa_4.0.12p9-1
+Depends: libc, python3
+Source: /home/user/archive-master/smatec-smartpa-v3.3/python-mgw
+SourceName: python3-mgw
+License: Python Software Foundation License (PSF)
+LicenseFiles: LICENSE.rst
+Section: lang
+SourceDateEpoch: 1641374271
+CPE-ID: cpe:/a:smt:mgw
+Maintainer: Nguyen Hong Son <sonnh911@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 153333
+Filename: python3-mgw_smartpa_4.0.12p9-1_mipsel_24kc.ipk
+Size: 154337
+SHA256sum: caae7c47c4be7e65964e0872b52ec5d866fbfc31135f85e3b29126138f6b0379
+Description:  Smatec M-Gateway
+ .
+ (Variant for Python3)
+
+Package: python3-pyaudio
+Version: 0.2.11-1
+Depends: libc, python3, portaudio, python3-setuptools
+Source: /home/user/archive-master/smatec-smartpa-v3.3/python-pyaudio
+SourceName: python3-pyaudio
+License: MIT License
+LicenseFiles: LICENSE.rst
+Section: lang
+SourceDateEpoch: 1724769069
+CPE-ID: cpe:/a:hubert:pyaudio
+Maintainer: HaiBac Ngo <ngohaibac@gmail.com>
+Architecture: mipsel_24kc
+Installed-Size: 19364
+Filename: python3-pyaudio_0.2.11-1_mipsel_24kc.ipk
+Size: 20220
+SHA256sum: 6a4c0a298bf063f424b690c8d15a02df3c455f14cb5871ece5072643c1ad65c7
+Description:  
+ .
+ (Variant for Python3)
+
