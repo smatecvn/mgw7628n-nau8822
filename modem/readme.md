@@ -61,7 +61,7 @@ Examples:
 Upgrade A7600:
 
 ```bash
-./update_modem.sh -m A7600 -v A81C4B04A7600M7
+./update_modem.sh -m A7600 -v A7600C_A81C4B04A7600M7
 ```
 
 Upgrade CLM920:
