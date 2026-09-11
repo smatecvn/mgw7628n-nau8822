@@ -53,20 +53,48 @@ done
 
 atcmd() {
     local cmd="$1"
+    local line
+
     exec 3<> /dev/ttyUSB1 2>/dev/null || {
-        echo "ERROR: Cannot open /dev/ttyUSB1 for AT command"
+        echo "ERROR: Cannot open /dev/ttyUSB1 for AT command" >&2
         return 1
     }
-    echo -ne "${cmd}\r" >&3
-    local response=""
-    while read -t 3 line <&3; do
-        echo "$line"
-        response="${response} ${line}"
-        [ "$line" = "OK" ] && break
-        [[ "$line" == ERROR* ]] && break
+
+    # Xóa dữ liệu còn sót trong buffer (nếu có)
+    #while read -t 0 line <&3; do :; done
+    while read -t 1 line <&3; do
+        :
     done
+
+    # Gửi lệnh
+    printf '%s\r' "$cmd" >&3
+
+    # Đọc phản hồi
+    while read -t 3 line <&3; do
+        # Bỏ ký tự CR
+        line=$(printf '%s' "$line" | tr -d '\r')
+
+        # Bỏ dòng echo của lệnh
+        [ "$line" = "$cmd" ] && continue
+
+        # Bỏ dòng trống
+        [ -z "$line" ] && continue
+
+        # Kết thúc
+        [ "$line" = "OK" ] && break
+        case "$line" in
+            ERROR*)
+                echo "$line" >&2
+                exec 3>&-
+                return 1
+                ;;
+        esac
+
+        # In dữ liệu thực
+        echo "$line"
+    done
+
     exec 3>&-
-    echo "$response"
 }
 
 case "$MODEM" in
@@ -154,7 +182,8 @@ check_model() {
     fi
 
     # Extract model
-    CURRENT_MODEL=$(printf '%s\n' "$ati_output" | sed -n 's/^Model:[[:space:]]*//p' | tr -d '\r')
+    # CURRENT_MODEL=$(printf '%s\n' "$ati_output" | sed -n 's/^Model:[[:space:]]*//p' | tr -d '\r')
+    CURRENT_MODEL=$(printf '%s\n' "$ati_output")
 
     if [ -z "$CURRENT_MODEL" ]; then
         echo "WARNING: Cannot determine module model. Continuing (risk of mismatch)."

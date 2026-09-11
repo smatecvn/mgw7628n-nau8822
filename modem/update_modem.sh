@@ -53,21 +53,56 @@ done
 
 atcmd() {
     local cmd="$1"
+    local line
+
+    # Mở cổng AT
     exec 3<> /dev/ttyUSB1 2>/dev/null || {
-        echo "ERROR: Cannot open /dev/ttyUSB1 for AT command"
+        echo "ERROR: Cannot open /dev/ttyUSB1" >&2
         return 1
     }
-    echo -ne "${cmd}\r" >&3
-    local response=""
-    while read -t 3 line <&3; do
-        echo "$line"
-        response="${response} ${line}"
-        [ "$line" = "OK" ] && break
-        [[ "$line" == ERROR* ]] && break
+
+    # Cấu hình serial
+    stty -F /dev/ttyUSB1 raw -echo -icanon min 0 time 10 >/dev/null 2>&1
+
+    # Xóa dữ liệu còn sót trong buffer
+    while IFS= read -r -t 0.2 line <&3; do
+        :
     done
+
+    # Gửi AT command
+    printf '%s\r' "$cmd" >&3
+
+    # Đọc phản hồi
+    while IFS= read -r -t 5 line <&3; do
+        # Loại bỏ CR
+        line=$(printf '%s' "$line" | tr -d '\r')
+
+        # Bỏ dòng trống
+        [ -z "$line" ] && continue
+
+        # Bỏ dòng echo của modem (nếu modem đang ATE1)
+        [ "$line" = "$cmd" ] && continue
+
+        # Kết thúc thành công
+        [ "$line" = "OK" ] && break
+
+        # Báo lỗi
+        case "$line" in
+            ERROR*)
+                echo "$line" >&2
+                exec 3>&-
+                return 1
+                ;;
+        esac
+
+        # In dữ liệu thực
+        printf '%s\n' "$line"
+    done
+
     exec 3>&-
-    echo "$response"
+    return 0
 }
+
 
 case "$MODEM" in
     A7600)
@@ -77,7 +112,7 @@ case "$MODEM" in
         EXPECTED_PID="9011"
         LOGFILE="/tmp/a7600_upgrade.log"
 
-        echo "$VERSION" | grep -q "A7600" || {
+        echo "$VERSION" | grep -qi "A7600" || {
             echo "ERROR: Firmware version does not match modem type A7600"
             exit 1
         }
@@ -142,19 +177,20 @@ check_usb_device()
 }
 
 check_model() {
-    echo "Querying current module model (ATI)..."
+    echo "Querying current module model (AT+CGMM)..."
 
     local ati_output
 
-    ati_output=$(atcmd "ATI")
+    ati_output=$(atcmd "AT+CGMM")
 
     if [ $? -ne 0 ] || [ -z "$ati_output" ]; then
-        echo "WARNING: Cannot query module model via ATI. Continuing (risk of mismatch)."
+        echo "WARNING: Cannot query module model via AT+CGMM. Continuing (risk of mismatch)."
         return 0
     fi
 
     # Extract model
-    CURRENT_MODEL=$(printf '%s\n' "$ati_output" | sed -n 's/^Model:[[:space:]]*//p' | tr -d '\r')
+    #CURRENT_MODEL=$(printf '%s\n' "$ati_output" | sed -n 's/^Model:[[:space:]]*//p' | tr -d '\r')
+    CURRENT_MODEL=$(printf '%s\n' "$ati_output")
 
     if [ -z "$CURRENT_MODEL" ]; then
         echo "WARNING: Cannot determine module model. Continuing (risk of mismatch)."
